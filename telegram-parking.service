@@ -1,0 +1,10 @@
+[Unit]
+Description=Tjek Telegram-beskeder og udfoer planlagte parkeringsregistreringer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=admin
+WorkingDirectory=/home/admin/guest_parking
+ExecStart=/home/admin/guest_parking/venv/bin/python3 /home/admin/guest_parking/telegram_bot.py

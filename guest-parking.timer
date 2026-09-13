@@ -1,0 +1,10 @@
+[Unit]
+Description=Koer guest-parking scan hvert 5. minut
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

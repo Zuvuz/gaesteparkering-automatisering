@@ -1,0 +1,8 @@
+[Unit]
+Description=Scan netvaerk og registrer gaesteparkering
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/home/admin/guest_parking
+ExecStart=/home/admin/guest_parking/venv/bin/python3 /home/admin/guest_parking/scan_and_register.py

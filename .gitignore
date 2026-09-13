@@ -1,0 +1,20 @@
+# Hemmeligheder og personlige data - deles ALDRIG
+telegram_config.py
+local_config.py
+people.json
+
+# Runtime-data - genereres automatisk, er ikke kildekode
+schedule.json
+pending_confirmation.json
+telegram_state.json
+state.json
+cars.json
+*.log
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Test-screenshots
+*.png

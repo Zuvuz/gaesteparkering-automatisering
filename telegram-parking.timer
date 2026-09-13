@@ -1,0 +1,11 @@
+[Unit]
+Description=Koer telegram-parking hvert minut
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+AccuracySec=10sec
+Persistent=true
+
+[Install]
+WantedBy=timers.target
